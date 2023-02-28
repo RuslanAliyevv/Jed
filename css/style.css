@@ -1,0 +1,1283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    z-index: -1;
+    position: relative;
+}
+.Header .left img{
+    background-color: transparent;
+}
+.Header{
+    width: 100%;
+    padding: 25px 0 0;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1111;
+}
+.Header li{
+    list-style: none;
+}
+
+.Header .center a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 11.5px;
+}
+.Header .center i{
+    color: white;
+}
+.Header .span_edit{
+    color: rgb(189, 165, 165);
+    margin-left: 10px;
+}
+.Header .center .a_edit{
+    color: rgb(224, 0, 0);
+}
+.Header .hr_edit{
+    width: 100%;
+    color: white;
+}
+.Main1{
+    background-image: url("../img/test.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+    
+
+}
+.Main1 .up h1{
+    color: white;
+    font-size: 63px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.Main1 .up{
+    position: absolute;
+    top: 200px;
+}
+
+
+
+
+
+.Main1 h3{
+    color: white;
+}
+.Main1 .bottom{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    max-width: 1320px;
+
+}
+
+
+.Main1 .bottom .left{
+    max-width: 80%;
+}
+.Main1 .bottom .right{
+    max-width: 20%;
+}
+.Main1 .bottom .right h3{
+    font-size: 20px;
+}
+.Main2 .span_line{
+    display: inline-block;
+    width: 35%;
+    background-color: blue;
+    height: 2px;
+}
+.Main2 h3{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.Main2 p{
+    width: 370px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+ .btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 50px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    z-index: 111;
+}
+ .btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(228, 14, 14, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+    border: 1px solid #5068F2;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #5068F2;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+ .btn:hover a {
+	letter-spacing: 3px;
+    color: white;
+}
+ .btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+ .btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+ .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #5068F2;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+ .btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+ .btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #5068F2;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+ .btn:hover::after /*lightup button*/ {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+ .btn:nth-child(3)::before, /* 3*/
+ .btn:nth-child(3)::after {
+	background: #1eff45;
+	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
+		0 0 60px #1eff45;
+}
+
+
+
+
+.Main2{
+    position: relative;
+    padding: 3rem 3rem;
+    background: #F2F4FF;
+}
+.Main2 .textaura{
+    position: absolute;
+    top: -50px;
+    left: 20px;
+}
+.Main2 .right{
+    position: relative;
+}
+.Main2 .img_edit{
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+    width: 290px;
+    height: 190px; 
+    object-fit: cover;
+}
+
+.Main3 .bottom_right span{
+    color: #525252;
+    opacity: 0.7;
+}
+.Main3 .bottom_right{
+    width: 40%;
+    justify-content: end;
+}
+.Main3 .bottom_all{
+    display: flex;
+}
+.Main3 .bottom h2{
+    margin-top: 20px;
+    font-size: 24px;
+    width: 300px;
+    margin-left: 20px;
+}
+.Main3 .bottom p{
+    margin-top: 10px;
+    width: 380px;
+    margin-left: 20px;
+}
+.Main3 .box{
+    margin-top: 40px;
+    border: 1px solid rgb(244, 227, 227);
+    padding: 0 0 26px 0;
+    border-radius: 10px;
+    background: #fefefe;
+    z-index: 111;
+    position: relative;
+}
+.Main3{
+    padding: 3rem 3rem;
+    background: #F2F4FF;
+    position: relative;
+}
+.Main3 .up img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Main3 .bottom_left span{
+    color: #525252;
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+.Main3 .bottom_left{
+    margin-left: 20px;
+    width: 60%;
+}
+.Main3 button{
+    padding: 8px 40px;
+    color: blue;
+    border: 2px solid rgb(132, 132, 244);
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 500;
+    margin-top: 30px;
+    text-align: end;
+}
+.Main3 .button_edit{
+    text-align: end;
+    margin-right: 13px;
+}
+.Main3 .textaura{
+    position: absolute;
+    top: -50px;
+    right: 20px;
+}
+.Main4{
+    padding: 3rem 0 5rem;
+    background: #F2F4FF;
+    position: relative;
+    z-index: 11;
+
+
+}
+.Main4 .right{
+    color: white;
+}
+.Main4 h5{
+    font-size: 20px;
+    line-height: 8px;
+    font-weight: 400;
+}
+.Main4 .box h4{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.Main4 .color_div{
+   background: linear-gradient(#5068F2,#2F41AA);
+    background-size: cover;
+    width: 100%;
+    padding: 4rem 0;
+    position: relative;
+
+}
+.Main4 .textaura{
+    position: absolute;
+    top: -60%;
+    left: 40%;
+    z-index: -1;
+    
+}
+.Main5{
+    background-color: #F2F4FF;
+}
+.Main5 .box{
+    position: relative;
+}
+.Main5 .box img{
+    border-radius: 10px;
+}
+.Main5 h3{
+    font-size: 25px;
+    width: 70%;
+    color: white;
+}
+.Main5 .box_bottom{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.Main5 button{
+    padding: 6px 30px;
+    background-color: #5068F2;
+    color: white;
+    border-radius: 10px;
+}
+.Main6{
+    background-color: #F2F4FF;
+}
+.Main6 .up .img_edit{
+    border-radius: 100%;
+
+}
+.Main6 .up span{
+    margin-left: 40px;
+    font-size: 24px;
+    color: #5068F2;
+    font-weight: bold;
+}
+.Main6 p{
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.Main6 .box{
+    border: 1px solid rgb(255, 210, 210);
+    padding: 25px 15px 30px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(143, 142, 142);
+}
+.Main6 .img_edit2{
+    border-radius: 10px;
+    width: 100%;
+}
+.Main6 .box2{
+    border: 1px solid rgb(255, 210, 210);
+    box-shadow: 5px 5px 20px rgb(143, 142, 142);
+    border-radius: 10px;
+    position: relative;
+}
+.Main6 .box2 h3{
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.Main6 .down2{
+    padding: 0px 0px 50px 0;
+}
+  
+.Main6 .btn{
+    width: 270px;
+    height: 50px;
+}
+
+.Main6 .box2 p{
+    text-align: center;
+    margin-top: 40px;
+}
+.Main6 .p_edit{
+    width: 100%;
+    background-color: rgba(86, 191, 153, 1);
+}
+.Main6 .p_edit2{
+    width: 100%;
+    background-color: rgba(242, 82, 82, 1);
+}
+.Main6 .p_edit3{
+    width: 100%;
+    background-color: rgba(242, 180, 65, 1);
+}
+.Main6 .icon_edit{
+    color: green;
+    font-size: 28px;
+}
+.Main6 i{
+    bottom: 14%;
+    left: 45%;
+    position: absolute;
+}
+.col-lg-25{
+ width: 11%;   
+}
+.Main7 img{
+    width: 100%;
+    margin-top: 40px;
+}
+.Main7{
+    background-color: #F2F4FF;
+    
+}
+.Main8 .input_up input{
+    width: 295px;
+    height: 43px;
+    border: 2px solid;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+.input_up input:last-child{
+    margin-left: 16px;
+}
+.input_down input:last-child{
+    margin-left: 16px;
+}
+.Main8 .input_down input{
+    width: 295px;
+    height: 43px;
+    border: 2px solid ;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+
+.Main8 input,textarea{
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+.Main8 .input_message textarea{
+    width: 610px;
+    margin-top: 30px;
+    height: 130px;
+    border: 2px solid ;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.Main8 .right{
+    margin-top: 0px;
+}
+.Main8 .right .location{
+    margin-top: 40px;
+}
+.Main8 .right .letter{
+    margin-top: 35px;
+}
+.Main8 .right .up{
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #e7ecfa;
+}
+.Main8 .frame{
+    border-radius: 10px;
+}
+.Main8{
+    background-color: #F2F4FF;
+    position: relative;
+}
+.Main8 .textaura{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+.Footer h2{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+.Footer h3{
+    font-size: 14px;
+    color: white;
+}
+.Footer{
+    background-color: rgba(80, 104, 242, 1);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.Footer span{
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);;
+}
+.Footer .center p{
+    display: block;
+    color: white;
+}
+.Footer .center{
+    background-color: rgba(26, 26, 26, 1);
+    background-size: cover;
+   padding: 50px 0;
+    margin-top: 10px;
+    position: relative;
+}
+.Footer .down{
+    background-color: black;
+    padding: 20px 0;
+    position: relative;
+}
+Footer .down p{
+    color: white;
+}
+.Footer .down span{
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);;
+}
+Footer i{
+    color: white;
+}
+.Footer .center span{
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);;
+}
+.Footer .right_end i{
+    font-size: 30px;
+    border-radius: 100px;
+    padding: 7px 7px;
+    background-color: #5068F2;
+    margin-left: 20px;
+}
+.Header ._link{
+    position: absolute;
+    background-color: white;
+    width: 90px;
+    height: 50px;
+    left: 22.5%;
+    top: 88%;
+    display: none;
+    cursor: pointer;
+}
+.Header ._link_measure{
+    position: absolute;
+    background-color: white;
+    width: 120px;
+    height: 60px;
+    right:  33.0%;
+    top: 88%;
+    display: none;
+    cursor: pointer;
+}
+.measure_link:hover ._link_measure{
+    display: block;
+}
+.Header ._link_measure a{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+.Header ._link a{
+    color: black;
+    font-size: 15px;
+}
+.haqqinda1:hover ._link{
+   display: block;
+  
+}
+.haqqinda{
+    cursor: pointer;
+}
+.Header a{
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+.Haqqimizda_items_background{
+    background-image: url("../img/hqqimizda_font.png");
+    background-size: cover;
+    object-fit: cover;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.Haqqimizda_items_background .items_edit_h1{
+    margin: auto;
+}
+.Haqqimizda_items_background h1{
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    
+}
+.breadcrumb-container{
+    position: relative;
+    z-index: 5;
+}
+.Haqqimizda_pages a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+}
+.Haqqimizda_pages .span_edit{
+    color: orange;
+    opacity: 0.3;
+}
+.About_mission .right{
+    height: 100%;
+    padding: 109px;
+    background-color: #F2F4FF;
+}
+.About_mission .right h3{
+    margin-bottom: 20px;
+}
+.About_mission .right p{
+    font-size: 15px;
+    line-height: 0.7cm;
+}
+.About_mission img{
+    width: 100%;
+}
+.About_mission .all{
+    display: flex;
+    align-items: center;
+}
+.about_team .item_box{
+    border: 1px solid rgb(250, 229, 229);
+    padding: auto;
+    width: 96.8%;
+    border-radius: 10px;
+}
+.about_team{
+    padding: 5rem 0;
+    background-color: #F2F4FF;
+}
+.about_team img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.about_team h3{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.about_team h6{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.Customer_comment{
+    padding: 5rem 0;
+    background-color: #F2F4FF;
+    position: relative;
+}
+.Customer_comment .custom_text{
+    margin-left: -20px;
+    border: 1px solid grey;
+    padding: 77px 20px 23px 30px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.Customer_comment p{
+    margin-top: 20px;
+}
+.Customer_comment h5{
+    font-weight: bold;
+    margin-top: 50px;
+}
+.Customer_comment .textaura{
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    z-index: 1;
+}
+
+
+
+/* Contact page */
+
+.Connect{
+    padding: 3rem 0;
+    background-image: url(../img/Contact\ page.png);
+    height: 340px;
+    position: relative;
+}
+.Connect h5{
+    position: absolute;
+    top: 67%;
+    left: 46%;
+    font-size: 40px;
+    color: white;
+}
+
+.Connect_place .left iframe{
+    height: 700px;
+    z-index: 11;
+}
+.Connect_place{
+    padding: 20px 0px 70px 0;
+    background-color: #F2F4FF;
+}
+
+.Connect_place .right{
+    margin-top: 48px;
+}
+.Connect_place .right .location{
+    margin-top: 40px;
+}
+.Connect_place .right .letter{
+    margin-top: 35px;
+}
+.Connect_place .right .up{
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #e7ecfa;
+}
+.Connect_place .textaura{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    z-index: 1;
+}
+
+.Connect_place .input_up input{
+    width: 295px;
+    height: 43px;
+    border: 2px solid;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+.input_up input:last-child{
+    margin-left: 16px;
+}
+.input_down input:last-child{
+    margin-left: 16px;
+}
+.Connect_place .input_down input{
+    width: 295px;
+    height: 43px;
+    border: 2px solid ;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+
+.Connect_place input,textarea{
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+.Connect_place .input_message textarea{
+    width: 610px;
+    margin-top: 30px;
+    height: 130px;
+    border: 2px solid ;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+.Connect_place .button_edit{
+    margin-top: 20px;
+    padding: 10px 120px;
+    background-color: #5068F2;
+    color: white;
+    border-radius: 7px;
+    border-color: #e7ecfa;
+
+}
+
+
+/* Hr Heller */
+
+
+.Solutions{
+    padding: 3rem 0;
+    background-image: url(../img/Hr\ Heller.png);
+    height: 340px;
+    position: relative;
+}
+.Solutions h5{
+    position: absolute;
+    top: 67%;
+    left: 46%;
+    font-size: 40px;
+    color: white;
+}
+
+.Menecment{
+    padding: 2rem 0 7rem;
+    background-color: #F2F4FF;
+}
+
+.Menecment .input_up input{
+    width: 295px;
+    height: 43px;
+    border: 2px solid;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+.input_up input:last-child{
+    margin-left: 16px;
+}
+.input_down input:last-child{
+    margin-left: 16px;
+}
+.Menecment .input_down input{
+    width: 295px;
+    height: 43px;
+    border: 2px solid ;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+
+.Menecment input,textarea{
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+.Menecment .input_message textarea{
+    width: 610px;
+    margin-top: 30px;
+    height: 130px;
+    border: 2px solid ;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+.Menecment .button_edit{
+    margin-top: 20px;
+    padding: 10px 120px;
+    background-color: #5068F2;
+    color: white;
+    border-radius: 7px;
+    border-color: #e7ecfa;
+
+}
+.Menecment .left h1{
+    max-width: 500px;
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.Menecment p{
+    width: 100%;
+    max-width: 600px;
+    font-weight: 300;
+}
+.Menecment .down h1{
+    font-size: 35px;
+}
+
+
+
+/* Sertifikasiya proqram */
+
+.Proqram{
+    padding: 3rem 0;
+    background-image: url(../img/Proqram\ page.png);
+    height: 340px;
+    position: relative;
+}
+.Proqram h5{
+    position: absolute;
+    top: 67%;
+    left: 35%;
+    font-size: 40px;
+    color: white;
+}
+
+.Ability{
+    padding: 2rem 0 7rem;
+}
+
+.Ability .input_up input{
+    width: 295px;
+    height: 43px;
+    border: 2px solid;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+.input_up input:last-child{
+    margin-left: 16px;
+}
+.input_down input:last-child{
+    margin-left: 16px;
+}
+.Ability .input_down input{
+    width: 295px;
+    height: 43px;
+    border: 2px solid ;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+
+.Ability input,textarea{
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+.Ability .input_message textarea{
+    width: 610px;
+    margin-top: 30px;
+    height: 130px;
+    border: 2px solid ;
+    border-color: rgba(80, 104, 242, 1);
+    border-radius: 8px;
+}
+.Ability .button_edit{
+    margin-top: 20px;
+    padding: 10px 120px;
+    background-color: #5068F2;
+    color: white;
+    border-radius: 7px;
+    border-color: #e7ecfa;
+
+}
+.Ability .left h1{
+    max-width: 500px;
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.Ability p{
+    width: 100%;
+    max-width: 600px;
+    font-weight: 300;
+}
+.Ability .down h1{
+    font-size: 35px;
+}
+
+
+
+/* beynelxalq emekdasliq */
+
+
+.International{
+    padding: 3rem 0;
+    background-image: url(../img/Hr\ Heller.png);
+    height: 340px;
+    position: relative;
+}
+.International h5{
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    font-size: 40px;
+    color: white;
+}
+
+.Certification{
+    padding: 2rem 0 5rem;
+    background-color: #F2F4FF;
+    position: relative;
+}
+.Certification .textaura{
+    
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+.Certification .textaura1{
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    z-index: 11;
+}
+
+
+.Certification .left h1{
+    max-width: 500px;
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.Certification p{
+    width: 100%;
+    max-width: 600px;
+    font-weight: 300;
+}
+.Certification .left,.right{
+    margin-top: 50px;
+}
+
+
+
+/* TEDBIRLER..... */
+
+
+
+.Measure{
+    padding: 3rem 0;
+    background-image: url(../img/Tedbirler.png);
+    height: 340px;
+    position: relative;
+}
+.Measure h5{
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    font-size: 40px;
+    color: white;
+}
+.Measure_section{
+    background-color: #F2F4FF;
+    padding: 60px 0 60px;
+    position: relative;
+}
+.Measure_section h2{
+    width: 100%;
+    max-width: 300px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+.Measure_section p{
+    font-weight: 300;
+    margin-top: 20px;
+}
+.Measure_section .white_back{
+    padding: 7px 60px;
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid rgb(83, 83, 239);
+    color: #5068F2;
+    font-weight: bold;
+}
+.Measure_section .blue_back{
+    padding: 7px 50px;
+    border-radius: 6px;
+    background-color: #5068F2;
+    border: 1px solid rgb(83, 83, 239);
+    color: white;
+    font-weight: bold;
+}
+.Measure_section button{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.Measure_section img{
+    width: 100%;
+}
+.Measure_section .textaura{
+    
+    position: absolute;
+    top: 0%;
+    right:0%;
+    z-index: 1;
+}
+.Measure_section .span_edit{
+    opacity: 0.6;
+}
+.Measure_section span{
+    font-size: 20px;
+}
+.Measure_section a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Kecmis Tedbirler */
+
+.Last_measures .right h5{
+    width: 100%;
+    max-width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Last_measures .right p{
+    width: 100%;
+    max-width: 200px;
+    font-size: 12px;
+}
+.Last_measures .right{
+    margin-left: -40px;
+    margin-bottom: 100px;
+
+}
+.Last_measures .left{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.Last_measures .up img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.Last_measures .box{
+    border: 1px solid rgb(9, 58, 9);
+    border-radius: 12px;
+    height: 420px;
+    width: 96.8%;
+    border-color: rgb(245, 240, 240);
+    margin-top: 30px;
+    background-color: rgba(253, 253, 253, 1);
+    box-shadow: 5px 5px 20px rgb(143, 142, 142);
+
+}
+.Last_measures h6{
+   color: #5068F2;
+}
+.Last_measures hr{
+    width: 42%;
+    background-color: black;
+}
+.Last_measures{
+    padding: 30px 0 80px;
+    background-color: #F2F4FF;
+    position: relative;
+}
+
+.Last_measures .textaura{
+    
+    position: absolute;
+    bottom: -5%;
+    right:50%;
+    z-index: 1;
+}
+.Last_measures .textaura2{
+    
+    position: absolute;
+    bottom: -5%;
+    right:25%;
+    z-index: 1;
+}
+
+
+/* TEDRIS PROQRAMLARI */
+.Method{
+    padding: 3rem 0;
+    background-image: url(../img/Method.png);
+    height: 340px;
+    position: relative;
+}
+.Method h5{
+    position: absolute;
+    top: 67%;
+    left: 38%;
+    font-size: 40px;
+    color: white;
+}
+
+/* YAXINLASAN FORUM */
+
+.Nearly_forum{
+    padding: 3rem 0;
+    background-image: url(../img/Tedbirler.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+    position: relative;
+}
+.Nearly_forum h5{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 100%;
+    max-width: 420px;
+    font-size: 35px;
+    color: white;
+}
+.Forum_page{
+    background-color: rgba(229, 233, 254, 1);
+    padding: 30px 0 200px;
+}
+.Forum_page p{
+    width: 100%;
+    max-width: 490px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.Forum_page button{
+    padding: 8px 50px;
+    background-color: #5068F2;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-top: 10px;
+}
+.Forum_table .medium_border_td{
+    border: 1px solid grey;
+}
+.Forum_table .large_border_td{
+    border: 1px solid grey;
+    
+    
+}
+.Forum_table .box{
+    border: 1px solid grey;
+    padding: 60px 60px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 70%;
+    margin: auto;
+    margin-top: -140px;
+    z-index: 1;
+    
+}
+.Forum_table .box h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.Forum_table{
+    position: relative;
+   padding-bottom: 100px;
+}
+
+.Forum_table .textaura{
+    
+    position: absolute;
+    bottom: -60%;
+    right:45%;
+    z-index: -1;
+}
+.Forum_table .textaura2{
+    
+    position: absolute;
+    bottom: -60%;
+    right:25%;
+    z-index: -1;
+}
+
+    
