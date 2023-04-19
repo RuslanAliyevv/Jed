@@ -302,6 +302,10 @@ body{
     top: -50px;
     right: 20px;
 }
+
+.Main3 .btn{
+    width: 45%;
+}
 .Main4{
     padding: 3rem 0 5rem;
     background: #F2F4FF;
@@ -628,7 +632,7 @@ Footer i{
 
 
 
-
+/* Haqqimizda */
 
 
 
